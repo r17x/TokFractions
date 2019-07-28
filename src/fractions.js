@@ -1,22 +1,25 @@
 /**
+ * @name getNumber 
+ * @type {Function}
+ * @param {Any} maybeNumber
+ * @return {Number}
+ */
+export const getNumber = maybeNumber => Number(String(maybeNumber).replace(/\D/gm,'')) || 0
+
+export const defaultFractions =  [100000, 50000, 20000, 10000, 5000, 1000, 500, 100, 50]    
+/**
  * @description
  *  Account for only available current
  *  rupiah fractions 100000, 50000, 20000,
  *  10000, 5000, 1000, 500, 100 and 50.
  *
+ * @name fraction
+ * @type {Function}
  * @param {Number} amount
- * @param {Object} fractions
- * @return {Object} fractions
+ * @param {Array} [fractions]
+ * @return {Object}
+ *
  */
-
-export const getNumber = maybeNumber => Number(String(maybeNumber).replace(/\D/gm,'')) || 0
-
-export const defaultFractions =  [100000, 50000, 20000, 10000, 5000, 1000, 500, 100, 50]    
-export const defaultFractioned = defaultFractions.reduce((acc, cur) => {
-        acc[String(cur)] = 0
-        return acc 
-    }, {}) 
-
 export default function fraction(
   amount,
   fractions = defaultFractions  
@@ -44,18 +47,19 @@ export default function fraction(
   return result;
 };
 
-// const re = new RegExp(/(^Rp\s)?(\d{0,3}.(\d{3}.)*\d{3}|\d+)((,)?<=\d\d)?$/,'gm')
-// const re = new RegExp(/(^Rp\s)?([0-9]{1,3}.([0-9]{3}.)*[0-9]{3}|[0-9]+)(\,[0-9][0-9])?$/, 'g')
+/**
+ * @var defaultFractioned
+ * @type {Object}
+ */
+export const defaultFractioned = defaultFractions.reduce((acc, cur) => {
+  acc[String(cur)] = 0
+  return acc 
+}, {}) 
 
 /**
+ * @name validationCurrency 
+ * @type {Function}
  * @param {String|Number} value
- * @return {Boolean} regexMatch
+ * @return {Boolean} regex.test
  */
-export const validationCurrency = value => {
-    const reSpace = new RegExp(/(?<=\d)\s(?=\d)/,'g')
-    // const re = new RegExp(/^[Rp|\s]*(?=.*[1-9])\d*(?:,[0]{1,2})?\s*$/,'g')
-    const re = new RegExp(/^[Rp\s]*(\d{0,3}.(\d{3}.)*\d{3}|\d+)*(?:,[0][0]{0,2}?)?$/, 'g')
-    if(/^\D+$/g.test(value)) return false 
-    if(reSpace.test(value)) return false 
-    return re.test(value) 
-}
+export const validationCurrency = value => /^(Rp\s?)?[0-9]{1,3}(\.?[0-9]{3})*(,\d{2}$)?$/.test(value)
