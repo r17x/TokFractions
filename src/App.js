@@ -18,9 +18,7 @@ export default function App() {
             onChange={handleChange} 
             onKeyPress={handleKeyEnter}
         />
-        {result.visible && (
-            <ListDenominations data={Object.entries(result.fraction)}/>
-        )}
+        <ListDenominations visible={result.visible} data={Object.entries(result.fractioned)}/>
       </article>
       <footer>{constants.footerText}</footer>
     </>
