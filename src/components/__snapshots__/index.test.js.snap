@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component 1`] = `
+<div>
+  <input
+    aria-label="input-text"
+    class=""
+    placeholder="Rp 500"
+    type="text"
+    value=""
+  />
+</div>
+`;
+
+exports[`ListDenominations Component 1`] = `
+<div>
+  <ul />
+</div>
+`;

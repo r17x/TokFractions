@@ -1,5 +1,5 @@
 import React from 'react'
-import {string, func} from 'prop-types'
+import {array, arrayOf, string, func} from 'prop-types'
 
 export function Input({value, onChange, onKeyPress, valid }) {
   const handleChange = (e) => {
@@ -8,7 +8,7 @@ export function Input({value, onChange, onKeyPress, valid }) {
   return (
     <input
       type="text"
-      aria-label="amount"
+      aria-label="input-text"
       value={value}
       className={ valid ? 'success' : valid === false ? 'error' : '' }
       onChange={handleChange}
@@ -35,6 +35,10 @@ export function ListDenominations({data}){
             {data.map(renderList)}
         </ul>
     ) 
+}
+
+ListDenominations.propTypes = {
+    data: arrayOf(array).isRequired,
 }
 
 
