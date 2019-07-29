@@ -1,4 +1,8 @@
-# TokFractions [![codecov](https://codecov.io/gh/ri7nz/TokFractions/branch/master/graph/badge.svg)](https://codecov.io/gh/ri7nz/TokFractions) [![Build Status](https://travis-ci.org/ri7nz/TokFractions.svg?branch=master)](https://travis-ci.org/ri7nz/TokFractions)
+# TokFractions 
+[![codecov](https://codecov.io/gh/ri7nz/TokFractions/branch/master/graph/badge.svg)](https://codecov.io/gh/ri7nz/TokFractions) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/f501010fa941773fbedb/maintainability)](https://codeclimate.com/github/ri7nz/TokFractions/maintainability)
+[![Build Status](https://travis-ci.org/ri7nz/TokFractions.svg?branch=master)](https://travis-ci.org/ri7nz/TokFractions)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://ri7nz.mit-license.org/)
 
 ### Live Demo : [Check This Out](https://tokfractions.ri7nz.now.sh)
 
@@ -52,3 +56,7 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Credits
+
+TokFractions [MIT license](https://ri7nz.mit-license.org/). 
