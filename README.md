@@ -14,6 +14,8 @@ Note: I'm using `Yarn`.
 - [React.js](http://reactjs.org) (bootstrapped by [create-react-app](https://github.com/facebook/create-react-app))
 - [Jest](http://jestjs.io/) (built-in in create-react-app)
 - [Jest-Each](https://www.npmjs.com/package/jest-each) (Tool For Jest & Testing)
+- [@testing-library/react](https://github.com/testing-library/react-testing-library) (For Test React Component)
+- [@testing-library/jest-dom](https://github.com/testing-library/jest-dom) (Jest Custom Matcher)
 - [Zeit/now](https://zeit.co/) (For Deployment & Service Integration)
 - [Dependabot](https://github.com/apps/dependabot-preview) (Dependencies secure and up to date)
 - [CodeCov](https://codecov.io/gh/ri7nz/TokFractions)
