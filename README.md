@@ -1,4 +1,4 @@
-# TokFractions
+# TokFractions [![codecov](https://codecov.io/gh/ri7nz/TokFractions/branch/master/graph/badge.svg)](https://codecov.io/gh/ri7nz/TokFractions) 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -16,6 +16,7 @@ Note: I'm using `Yarn`.
 - [Jest-Each](https://www.npmjs.com/package/jest-each) (Tool For Jest & Testing)
 - [Zeit/now](https://zeit.co/) (For Deployment & Service Integration)
 - [Dependabot](https://github.com/apps/dependabot-preview) (Dependencies secure and up to date)
+- [CodeCov](https://codecov.io/gh/ri7nz/TokFractions)
 
 ## Available Scripts
 
@@ -33,6 +34,10 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn test:ci`
+
+Use for CI `travis` integration for codecov (coverage test).
 
 ### `yarn build`
 
