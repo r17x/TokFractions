@@ -1,6 +1,5 @@
 import React from 'react'
 import {array, arrayOf, string, func} from 'prop-types'
-
 export function Input({value, onChange, onKeyPress, valid }) {
   const handleChange = (e) => {
       typeof onChange === 'function' && onChange(e.target.value, e) 
@@ -40,5 +39,3 @@ export function ListDenominations({data}){
 ListDenominations.propTypes = {
     data: arrayOf(array).isRequired,
 }
-
-
