@@ -1,6 +1,5 @@
 import React from 'react'
-import {string, func} from 'prop-types'
-
+import {array, arrayOf, string, func} from 'prop-types'
 export function Input({value, onChange, onKeyPress, valid }) {
   const handleChange = (e) => {
       typeof onChange === 'function' && onChange(e.target.value, e) 
@@ -8,7 +7,7 @@ export function Input({value, onChange, onKeyPress, valid }) {
   return (
     <input
       type="text"
-      aria-label="amount"
+      aria-label="input-text"
       value={value}
       className={ valid ? 'success' : valid === false ? 'error' : '' }
       onChange={handleChange}
@@ -24,17 +23,22 @@ Input.propTypes = {
     onKeyPress: func,
 }
 
-export function ListDenominations({data}){
+export function ListDenominations({data, visible}){
     const renderList = (item ,key) => (
         <li key={key}>
             {item.map((li,i) => <span key={i}>{li}</span>)}
         </li>
     )
     return (
-        <ul>
+        <ul style={{visibility: visible ? 'visible' : 'hidden'}} data-testid="list-denominations">
             {data.map(renderList)}
         </ul>
     ) 
 }
 
-
+ListDenominations.propTypes = {
+    data: arrayOf(array).isRequired,
+}
+ListDenominations.defaultProps = {
+    visible: false,
+}
