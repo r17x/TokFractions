@@ -12,14 +12,12 @@ export default function App() {
         <h1>{constants.app}</h1>
       </header>
       <article>
-        <form onSubmit={e => e.preventDefault()}>
-            <Input 
-                valid={valid}
-                value={amount} 
-                onChange={handleChange} 
-                onKeyPress={handleKeyEnter}
-            />
-        </form>
+        <Input 
+            valid={valid}
+            value={amount} 
+            onChange={handleChange} 
+            onKeyPress={handleKeyEnter}
+        />
         {result.visible && (
             <ListDenominations data={Object.entries(result.fraction)}/>
         )}
