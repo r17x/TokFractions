@@ -12,9 +12,9 @@ cache:
 
 install:
   - yarn install
-  
-before_script:
-  - yarn test:ci
+  - yarn add codecov --dev
   
 script:
+  - yarn test:ci
+  - codecov
   - yarn build
