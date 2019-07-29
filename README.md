@@ -1,4 +1,4 @@
-# TokFractions [![codecov](https://codecov.io/gh/ri7nz/TokFractions/branch/master/graph/badge.svg)](https://codecov.io/gh/ri7nz/TokFractions) 
+# TokFractions [![codecov](https://codecov.io/gh/ri7nz/TokFractions/branch/master/graph/badge.svg)](https://codecov.io/gh/ri7nz/TokFractions) [![Build Status](https://travis-ci.org/ri7nz/TokFractions.svg?branch=master)](https://travis-ci.org/ri7nz/TokFractions)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
