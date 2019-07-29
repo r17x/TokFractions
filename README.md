@@ -1,8 +1,10 @@
 # TokFractions [![codecov](https://codecov.io/gh/ri7nz/TokFractions/branch/master/graph/badge.svg)](https://codecov.io/gh/ri7nz/TokFractions) [![Build Status](https://travis-ci.org/ri7nz/TokFractions.svg?branch=master)](https://travis-ci.org/ri7nz/TokFractions)
 
+### Live Demo : [Check This Out](https://tokfractions.ri7nz.now.sh)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Prerequisite
+## Prerequisite
 - Make sure [Node](https://nodejs.org/en/) & [Yarn](https://yarnpkg.com/lang/en/docs/install) or [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) has installed in your local machine.
 - You need clone this project `$ git clone git@github.com:ri7nz/TokFractions.git `.
 - Change directory & Install dependencies `$ cd TokFractions && yarn install`.
@@ -10,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Note: I'm using `Yarn`.
 
-### Stack Technology
+## Stack Technology
 - [React.js](http://reactjs.org) (bootstrapped by [create-react-app](https://github.com/facebook/create-react-app))
 - [Jest](http://jestjs.io/) (built-in in create-react-app)
 - [Jest-Each](https://www.npmjs.com/package/jest-each) (Tool For Jest & Testing)
