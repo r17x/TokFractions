@@ -36,5 +36,12 @@
     "cross-env": "5.2.0",
     "jest-each": "^24.8.0",
     "react-test-renderer": "16.8.6"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/src/serviceWorker.js",
+      "!<rootDir>/node_modules/"
+    ]
   }
 }
