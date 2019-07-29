@@ -14,6 +14,9 @@ exports[`Input Component 1`] = `
 
 exports[`ListDenominations Component 1`] = `
 <div>
-  <ul />
+  <ul
+    data-testid="list-denominations"
+    style="visibility: hidden;"
+  />
 </div>
 `;

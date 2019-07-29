@@ -23,14 +23,14 @@ Input.propTypes = {
     onKeyPress: func,
 }
 
-export function ListDenominations({data}){
+export function ListDenominations({data, visible}){
     const renderList = (item ,key) => (
         <li key={key}>
             {item.map((li,i) => <span key={i}>{li}</span>)}
         </li>
     )
     return (
-        <ul>
+        <ul style={{visibility: visible ? 'visible' : 'hidden'}} data-testid="list-denominations">
             {data.map(renderList)}
         </ul>
     ) 
@@ -38,4 +38,7 @@ export function ListDenominations({data}){
 
 ListDenominations.propTypes = {
     data: arrayOf(array).isRequired,
+}
+ListDenominations.defaultProps = {
+    visible: false,
 }

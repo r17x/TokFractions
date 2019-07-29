@@ -26,8 +26,8 @@ export default function useFractions(){
           fractioned: fraction(getNumber(amount))
         })
     }
-  },[amount, valid, result ]
- )  
+  },[amount, valid, result ])  
+
     return [
       amount,
       result,
