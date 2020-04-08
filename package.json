@@ -34,7 +34,7 @@
     "@testing-library/react": "10.0.2",
     "@testing-library/react-hooks": "3.2.1",
     "cross-env": "7.0.2",
-    "jest-each": "^25.2.6",
+    "jest-each": "^25.3.0",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
