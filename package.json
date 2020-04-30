@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.5.0",
-    "@testing-library/react": "10.0.3",
+    "@testing-library/react": "10.0.4",
     "@testing-library/react-hooks": "3.2.1",
     "cross-env": "7.0.2",
     "jest-each": "^25.5.0",
