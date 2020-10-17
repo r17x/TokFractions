@@ -35,7 +35,7 @@
     "@testing-library/react-hooks": "3.4.2",
     "cross-env": "7.0.2",
     "jest-each": "^26.5.2",
-    "react-test-renderer": "16.13.1"
+    "react-test-renderer": "16.14.0"
   },
   "jest": {
     "collectCoverageFrom": [
